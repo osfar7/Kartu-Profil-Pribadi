@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kartu Profil Pribadi</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+      /* Reset & base */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f0f4f9;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+      }
+
+      /* Card container */
+      .profile-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 320px;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      /* Top colored area */
+      .profile-header {
+        background-color: #4285f4;
+        height: 120px;
+        position: relative;
+      }
+
+      /* Profile image */
+      .profile-image {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        border: 5px solid #ffffff;
+        object-fit: cover;
+        position: absolute;
+        left: 50%;
+        bottom: -55px;
+        transform: translateX(-50%);
+        background-color: #eee;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Content area */
+      .profile-content {
+        padding: 70px 30px 30px;
+        color: #333333;
+      }
+
+      .profile-name {
+        font-weight: 600;
+        font-size: 1.3rem;
+        margin-bottom: 6px;
+        color: #222222;
+      }
+
+      .profile-role {
+        color: #7a7a7a;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-bottom: 16px;
+      }
+
+      .profile-desc {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: #555555;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Responsive scaling */
+      @media screen and (max-width: 400px) {
+        .profile-card {
+          width: 90vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="profile-card" aria-label="Kartu Profil Pribadi">
+      <div class="profile-header">
+        <img
+          src="Underwater.jpg"
+          alt="Foto perempuan muda dengan rambut coklat lurus, tersenyum lembut mengenakan blazer putih, latar belakang buram"
+          class="profile-image"
+          onerror="this.style.display='none'"
+        />
+      </div>
+      <div class="profile-content">
+        <h1 class="profile-name">Muhamad Fadil</h1>
+        <p class="profile-role">Web Developer</p>
+        <p class="profile-desc">
+          Saya adalah seorang developer yang bersemangat dalam menciptakan
+          aplikasi web yang fungsional dan mudah digunakan.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
